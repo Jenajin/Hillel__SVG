@@ -13,21 +13,44 @@
 
 <body>
 
-
-
     <div class="container">
 
-        <svg class="svg" width="270" height="270">
-            <rect class="quadrate" x="10" y="10" width="250" height="250" fill="blue" stroke="red" stroke-width="5">
+        <svg width="265" height="265">
+            <rect class="quadrate" x="10" y="10" width="250" height="250"
+                style="fill:blue; stroke:gold; stroke-width:5;" />
         </svg>
 
         <svg class="svg" width="270" height="120">
-            <rect class="rectangl" x="10" y="10" width="250" height="100" fill="yellowgreen" stroke="crimson" stroke-width="5">
+            <rect class="rectangl" x="10" y="10" width="250" height="100" style="fill:yellowgreen; stroke:crimson;
+            stroke-width: 5;" />
+        </svg>
+
+        <svg width="250" height="250">
+            <circle cx="125" cy="125" r="120" style="stroke:red; fill:cadetblue; stroke-width:5;" />
+        </svg>
+
+        <svg width="250" height="160">
+            <ellipse cx="125" cy="80" rx="120" ry="75" style="stroke: orange; fill:darkolivegreen; stroke-width:5;" />
+        </svg>
+
+        <svg class="svg-text" width="250" height="250">
+            <text x="0" y="0">
+                <tspan x="20" y="70">З правого боку</tspan>
+                <tspan x="20" y="100">анімується квадрат</tspan>
+                <tspan x="20" y="130">при наведенні</tspan>
+                <tspan x="20" y="160">курсору</tspan>
+            </text>
+        </svg>
+
+        <svg class="svg" width="250" height="250">
+            <g class="svg__group">
+                <rect class="svg__rect" x="0" y="0" width="250" height="250" />
+                <line class="svg__line" x1="0" x2="250" y1="0" y2="250" />
+                <line class="svg__line" x1="250" x2="0" y1="0" y2="250" />
+            </g>
         </svg>
 
     </div>
-
-
 
 </body>
 

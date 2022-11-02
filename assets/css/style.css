@@ -9,12 +9,56 @@
     padding: 0 20px;
     margin-inline: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
 }
 
-/* .svg {
-    width: 300px;
-    height: 300px;
-} */
+.svg-text {
+    fill:chocolate;
+    font-size: 25px;
+    animation-name: text;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
 
+@keyframes text {
+    0% {
+        fill:chocolate;
+        transform: scale(1);
+    }
+
+    50% {
+        fill: red;
+        transform: scale(1.1);
+    }
+
+    100% {
+        fill:chocolate;
+        transform: scale(1);
+    }
+}
+
+.svg__rect {
+    fill: transparent;
+    stroke: orange;
+    stroke-width: 10;
+    transition: 0.5s ease-in-out;
+}
+
+.svg__line {
+    stroke-width: 5px;
+    stroke: orange;
+    transition: 0.5s ease-in-out;
+}
+
+.svg:hover .svg__rect {
+    fill: brown;
+    stroke: green;  
+}
+
+.svg:hover .svg__line {
+    stroke: green;
+   
+}
