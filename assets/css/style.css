@@ -15,7 +15,7 @@
 }
 
 .svg-text {
-    fill:chocolate;
+    fill: chocolate;
     font-size: 25px;
     animation-name: text;
     animation-timing-function: linear;
@@ -25,7 +25,7 @@
 
 @keyframes text {
     0% {
-        fill:chocolate;
+        fill: chocolate;
         transform: scale(1);
     }
 
@@ -35,7 +35,7 @@
     }
 
     100% {
-        fill:chocolate;
+        fill: chocolate;
         transform: scale(1);
     }
 }
@@ -55,10 +55,9 @@
 
 .svg:hover .svg__rect {
     fill: brown;
-    stroke: green;  
+    stroke: green;
 }
 
 .svg:hover .svg__line {
     stroke: green;
-   
 }
